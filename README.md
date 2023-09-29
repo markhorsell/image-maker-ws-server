@@ -4,8 +4,13 @@ To run project
 
 node . 
 
-and test by visiting 
+and test http part by visiting 
 
 http://localhost:8081/text/hello
+
+test the ws MUST be via a client a direct connection will just show "Upgrade Required"
+
+
+
 
 
