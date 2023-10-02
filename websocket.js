@@ -12,8 +12,10 @@ wss.on('connection', (ws) => {
   ws.on('message', (message) => {
     console.log('Code to handle incoming messages')
     //ws.send(Math.random()*1000)
-    console.log(canvasFuncs.makeTextImage(message))
-    ws.send(Math.random()*1000)
+    const canvas=(canvasFuncs.makeTextImage(message))
+    //ws.send(Math.random()*1000)
+    //ws.send(JSON.stringify(canvas))
+    ws.send(canvas)
     
     //console.log(message)
   });
